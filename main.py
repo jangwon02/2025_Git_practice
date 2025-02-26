@@ -1,6 +1,9 @@
 # 간단한 Python 프로그램: 사용자 정보 입력 및 출력
+
 from save_info import *
 from calculate_birth_year import *
+from validate_age import *
+
 
 def get_user_info():
     name = input("이름을 입력하세요: ")
@@ -16,6 +19,7 @@ def main():
     
     save_user_info(name,age)
     birth_year=calculate_birth_year(age)
+    validate_age(age)
 
 if __name__ == "__main__":
     main()
